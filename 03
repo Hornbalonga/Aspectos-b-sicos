@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  int v_inicial, altura_inicial, angulo_lancamento;
+  float distancia;
+  printf("altura de lancamento");
+  scanf("%d",&altura_inicial);
+  printf("velocidade inicial");
+  scanf("%d",&v_inicial);
+  printf("angulo de lancamento");
+  scanf("%d",&angulo_lancamento);
+  distancia = (v_inicial*v_inicial*sin(2*angulo_lancamento))/9.81;
+  printf("%f",distancia);
+    return 0;
+}
